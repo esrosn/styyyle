@@ -16,7 +16,6 @@ class Content extends Component {
 
      filterProjects = (category) => {
         if(!category) {
-            
             return this.setState({
                 projects: data,
                 active: 'All'
@@ -30,6 +29,7 @@ class Content extends Component {
             active: category
         })
      }
+     
 
     render() {
     return (
