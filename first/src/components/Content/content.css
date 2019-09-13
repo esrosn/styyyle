@@ -1,0 +1,51 @@
+.row {
+  clear: both;
+}
+
+.header-row {
+  margin-bottom: 4.5vw;
+}
+
+.project-link > a {
+  display: block;
+}
+
+a {
+  color: #111111;
+  border: 0;
+  text-decoration: none;
+}
+.project-link--image {
+  position: relative;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.project-link--image .project-link--image-cover {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.3;
+  background: #999;
+  transition: opacity 60ms;
+  filter: saturate(30%);
+}
+
+@media screen and (max-width: 767px) {
+  .page-title-column {
+    display: none;
+  }
+  .page-title-column {
+    margin-top: 2.25vw;
+  }
+  .project-link {
+    margin-bottom: 4.5vw;
+  }
+}

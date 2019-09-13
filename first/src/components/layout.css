@@ -1,0 +1,21 @@
+.container {
+  background: #ffffff;
+  color: #111111;
+  text-shadow: none;
+  position: relative;
+  transform: translateY(100vh);
+  z-index: 2;
+  min-height: 100vh;
+}
+
+.inner-container {
+  position: relative;
+  background: #fff;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    transform: translateY(0);
+    margin-top: 100vw;
+  }
+}

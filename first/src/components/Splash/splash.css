@@ -1,0 +1,81 @@
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  cursor: s-resize;
+  transform: translateY(0);
+  transition: transform 800ms cubic-bezier(0.59, 0.01, 0.28, 1), opacity 800ms;
+  z-index: 1;
+}
+
+.splash-bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #787;
+}
+
+.home-splash {
+  display: block;
+}
+
+.home .home-splash {
+  display: block;
+}
+
+.splash-bg-inner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  min-width: 100vw;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0;
+}
+
+.splash-bg-inner.visible {
+  opacity: 1;
+}
+/* .splash .bird-name {
+  mix-blend-mode: exclusion;
+} */
+
+.show-bird-name .home-splash header,
+.bird-name {
+  opacity: 1;
+}
+.projects-splash {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .splash {
+    height: 100vw;
+  }
+
+  .bird-name {
+    display: none;
+  }
+
+  header,
+  .bird-name {
+    position: absolute;
+    top: 50%;
+    left: 9vw;
+    right: 9vw;
+    transform: translateY(-50%);
+    font-size: 6vw;
+    line-height: 1em;
+    color: #fff;
+    letter-spacing: -0.03em;
+    text-align: center;
+    pointer-events: none;
+  }
+}
