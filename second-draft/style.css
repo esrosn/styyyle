@@ -1,0 +1,205 @@
+:root {
+  --mouse-y: 0px;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  margin: 0;
+  overflow-y: hidden;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.projects {
+  padding: 20vh 0;
+  z-index: 2;
+  transform: translateY(calc(calc(var(--mouse-y) / 0.75 * -1) + 20px));
+  position: relative;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in 0s 1 normal forwards;
+  display: block;
+  text-align: center;
+}
+
+.clicked {
+  color: #999;
+  opacity: 0.5;
+}
+
+li:nth-child(2) {
+  animation-delay: 0.30000000000000004s;
+}
+li:nth-child(3) {
+  animation-delay: 0.4s;
+}
+li:nth-child(4) {
+  animation-delay: 0.5s;
+}
+li:nth-child(5) {
+  animation-delay: 0.6s;
+}
+li:nth-child(6) {
+  animation-delay: 0.7s;
+}
+li:nth-child(7) {
+  animation-delay: 0.7999999999999999s;
+}
+li:nth-child(8) {
+  animation-delay: 0.8999999999999999s;
+}
+li:nth-child(9) {
+  animation-delay: 0.9999999999999999s;
+}
+li:nth-child(10) {
+  animation-delay: 1.0999999999999999s;
+}
+
+p:hover {
+  color: green;
+  cursor: pointer;
+}
+
+p {
+  font-size: 9vh;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-0.5vh);
+  }
+}
+.small {
+  text-align: center;
+  font-size: 3vh;
+  margin-bottom: 1rem;
+  opacity: 0;
+  animation: fadeIn 0.3s ease-in 0s 1 normal forwards;
+}
+span {
+  display: inline-block;
+}
+
+.small:hover span {
+  display: none;
+}
+.small:hover::before {
+  content: 'Studio';
+}
