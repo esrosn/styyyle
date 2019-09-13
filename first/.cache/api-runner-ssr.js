@@ -1,8 +1,8 @@
 var plugins = [{
-      plugin: require('/Users/goij/Dev/utilities/styyyle/03_Code/first/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/goij/Dev/utilities/styyyle/first/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/goij/Dev/utilities/styyyle/03_Code/first/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/Users/goij/Dev/utilities/styyyle/first/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
